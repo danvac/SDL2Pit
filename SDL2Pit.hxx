@@ -1,0 +1,9 @@
+#ifndef SDL2PIT_HXX
+#define SDL2PIT_HXX
+
+#define INCOMING_PORT   5010
+
+#define SCREEN_WIDTH    1024
+#define SCREEN_HEIGHT   600
+
+#endif // SDL2PIT_HXX

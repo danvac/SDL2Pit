@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="SDL2Pit" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/SDL2Pit" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-Wextra" />
+					<Add option="-Wall" />
+					<Add option="-pg" />
+					<Add option="-g" />
+					<Add directory="include" />
+					<Add directory="Classes/" />
+				</Compiler>
+				<Linker>
+					<Add option="-pg" />
+				</Linker>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/SDL2Pit" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+					<Add directory="include" />
+					<Add directory="Classes/" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-std=c++11" />
+			<Add option="-Wextra" />
+			<Add option="-Wall" />
+		</Compiler>
+		<Linker>
+			<Add option="-lSDL2" />
+			<Add option="-lSDL2_gfx" />
+			<Add option="-lSDL2_image" />
+			<Add option="-lSDL2_net" />
+			<Add option="-lSDL2_ttf" />
+		</Linker>
+		<Unit filename="Classes/Colors.cxx" />
+		<Unit filename="Classes/Colors.hxx" />
+		<Unit filename="Classes/SpriteSheet.cxx" />
+		<Unit filename="Classes/SpriteSheet.hxx" />
+		<Unit filename="Classes/Texture.cxx" />
+		<Unit filename="Classes/Texture.hxx" />
+		<Unit filename="Classes/Viewports.cxx" />
+		<Unit filename="Classes/Viewports.hxx" />
+		<Unit filename="DCSBIOS/ExportStreamListener.hxx" />
+		<Unit filename="DCSBIOS/Parser.cxx" />
+		<Unit filename="DCSBIOS/Parser.hxx" />
+		<Unit filename="Instruments/Instrument.cxx" />
+		<Unit filename="Instruments/Instrument.hxx" />
+		<Unit filename="SDL2Pit.cxx" />
+		<Unit filename="SDL2Pit.hxx" />
+		<Extensions>
+			<code_completion />
+			<debugger />
+		</Extensions>
+	</Project>
+</CodeBlocks_project_file>
